@@ -75,13 +75,17 @@ $(document).ready(function () {
         language: spanish,
         columns: [
             {
-                "className": 'details-control',
-                "orderable": false,
-                "data": null,
-                "defaultContent": ''
+                name: 'icon',
+                orderable: false, searchable: false,
+                render: function (data, type, row) {
+                    return "<a href='#' class='btn btn-success btn-xs details-control'><span class='glyphicon glyphicon-plus'></span></a>";
+                }
             },
             {name: "Id", data: "id"},
             {name: "Grupo", data: "grupo"}
+        ],
+        columnDefs: [
+            {"className": "dt-center", "targets": "_all"}
         ],
         data: datos
     });
@@ -97,19 +101,28 @@ $(document).ready(function () {
         return  tableHija;
     }
 
-    $('#content-table tbody').on('click', 'td.details-control', function (e) {
+    $('#content-table tbody').on('click', 'td a.details-control', function (e) {
         e.preventDefault();
         var tr = $(this).closest('tr');
         var row = table.row(tr);
-
         if (row.child.isShown()) {
-            // This row is already open - close it
+           // This row is already open - close it
             row.child.hide();
             tr.removeClass('shown');
+            //Change className for <a>
+            $( tr.context ).removeClass('btn-danger' );
+            $( tr.context ).addClass('btn-success' );
+            //Change class for span
+            tr.context.firstElementChild.className='glyphicon glyphicon-plus';
         } else {
             // Open this row
             row.child(generarFilasByDatos(row.data(), ["id", "numSubElement"])).show();
             tr.addClass('shown');
+            //Change className for <a>
+            $( tr.context ).removeClass( 'btn-success' );
+            $( tr.context ).addClass('btn-danger');
+            //Change class for span
+            tr.context.firstElementChild.className='glyphicon glyphicon-minus';
         }
     });
 });
