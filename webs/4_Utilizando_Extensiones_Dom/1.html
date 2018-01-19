@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>1</title>
+        <!-- Bootstrap 3.3.6 -->
+        <link rel="stylesheet" href="../../plugins/bootstrap/css/bootstrap.min.css">
+        <!-- DataTables -->
+        <link rel="stylesheet" href="../../plugins/datatables/css/dataTables.bootstrap.css">
+        <!-- Plugin extension buttons -->
+        <link rel="stylesheet" href="../../plugins/datatables/extensions/Buttons/buttons.dataTables.min.css">
+        <style>
+            .highlight{
+                color:lightgreen;
+                background:black;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="col-md-12">
+                <h1 class="text-center text-muted">Ejemplos datatables</h1>
+                <div class="well">
+                    <div class="text-center">
+                        <a class="toogle-vis btn btn-sm btn-info" data-column="0">Id</a>
+                        <a class="toogle-vis btn btn-sm btn-info" data-column="1">Nombre</a>
+                        <a class="toogle-vis btn btn-sm btn-info" data-column="3">Fecha inicio</a>
+                    </div>
+                    <table class="display table" id="users-table">
+                        <thead>
+                            <tr>
+                                <th>Id</th>
+                                <th>Nombre</th>
+                                <th>Pais</th>
+                                <th>Fecha inicio</th>
+                            </tr>
+                        </thead>
+                        <tfoot>
+                            <tr>
+                                <th>Id</th>
+                                <th>Nombre</th>
+                                <th>Pais</th>
+                                <th>Fecha inicio</th>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+
+            </div>
+
+        </div>
+
+        <script src="../../plugins/jQuery/jQuery-2.2.0.min.js"></script>
+        <!-- DataTables -->
+        <script src="../../plugins/datatables/js/jquery.dataTables.min.js"></script>
+        <!-- Responsive -->
+        <script src="../../plugins/datatables/responsive/dataTables.responsive.min.js"></script>
+        <!-- Plugin extension buttons -->
+        <script src="../../plugins/datatables/extensions/Buttons/dataTables.buttons.min.js"></script>
+        <script src="../../plugins/datatables/extensions/Buttons/buttons.flash.min.js"></script>
+        <script src="../../plugins/datatables/extensions/Buttons/jszip.min.js"></script>
+        <script src="../../plugins/datatables/extensions/Buttons/pdfmake.min.js"></script>
+        <script src="../../plugins/datatables/extensions/Buttons/vfs_fonts.js"></script>
+        <script src="../../plugins/datatables/extensions/Buttons/buttons.html5.min.js"></script>
+        <script src="../../plugins/datatables/extensions/Buttons/buttons.print.min.js"></script>
+        <!-- myScript -->
+        <script src="../../js/4/1.js"></script>
+
+    </body>
+</html>

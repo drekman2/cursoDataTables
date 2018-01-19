@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Toogle Image</title>
+        <!-- Bootstrap 3.3.6 -->
+        <link rel="stylesheet" href="../../plugins/bootstrap/css/bootstrap.min.css">
+        <!-- DataTables -->
+        <link rel="stylesheet" href="../../plugins/datatables/css/jquery.dataTables.min.css">
+        <!--Plugin extension buttons-->
+        <link rel="stylesheet" href="../../plugins/datatables/extensions/Buttons/buttons.dataTables.min.css">
+        <link rel="stylesheet" href="../../plugins/datatables/extensions/Select/select.dataTables.min.css">
+        <!--Responsive-->
+        <link rel="stylesheet" href="../../plugins/datatables/responsive/responsive.dataTables.min.css">
+        <style>
+            td.details-control {
+                background: url('../../plugins/datatables/images/details_open.png') no-repeat center center;
+                cursor: pointer;
+            }
+
+            tr.shown td.details-control{
+                background: url('../../plugins/datatables/images/details_close.png') no-repeat center center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="col-md-12">
+                <h1 class="text-center text-muted">Añadir tablas ocultas con información adicional que se puedan desplegar</h1>
+                <div class="well">
+                    <div class="text-center">
+                        <a class="toogle-vis btn btn-sm btn-info" data-column="1">Id</a>
+                        <a class="toogle-vis btn btn-sm btn-info" data-column="2">Nombre</a>
+                        <a class="toogle-vis btn btn-sm btn-info" data-column="3">Creacion</a>
+                    </div>
+                    <br/>
+                    <table class="display table" id="companies-table">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Id</th>
+                                <th>Nombre</th>
+                                <th>Creacion</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+
+            </div>
+
+        </div>
+
+        <script src="../../plugins/jQuery/jQuery-2.2.0.min.js"></script>
+        <!-- DataTables -->
+        <script src="../../plugins/datatables/js/jquery.dataTables.min.js"></script>
+        <!-- Responsive -->
+        <script src="../../plugins/datatables/responsive/dataTables.responsive.min.js"></script>
+        <!-- Plugin extension buttons -->
+        <script src="../../plugins/datatables/extensions/Buttons/dataTables.buttons.min.js"></script>
+        <script src="../../plugins/datatables/extensions/Buttons/buttons.flash.min.js"></script>
+        <script src="../../plugins/datatables/extensions/Buttons/jszip.min.js"></script>
+        <script src="../../plugins/datatables/extensions/Buttons/pdfmake.min.js"></script>
+        <script src="../../plugins/datatables/extensions/Buttons/vfs_fonts.js"></script>
+        <script src="../../plugins/datatables/extensions/Buttons/buttons.html5.min.js"></script>
+        <script src="../../plugins/datatables/extensions/Buttons/buttons.print.min.js"></script>
+        <!--Select row, column, cells, all-->
+        <script src="../../plugins/datatables/extensions/Select/dataTables.select.min.js"></script>
+        <!-- myScript -->
+        <script src="../../js/5/1.js"></script>
+
+    </body>
+</html>
