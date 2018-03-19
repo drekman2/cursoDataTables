@@ -1,7 +1,6 @@
 # cursoDataTables
 
-Código realizado a la vez que hacía el videocurso de https://www.cursosdesarrolloweb.es/course/curso-de-datatables/
-Muy recomendado
+Código realizado a la vez que hacía el videocurso de [DesarrolloWeb](https://www.cursosdesarrolloweb.es/course/curso-de-datatables/) - Muy recomendado
 No es exactamente lo mismo que hace él en sus vídeos ya que a veces realizo diversas modificaciones 
 
 En el index.html está un indice con enlace al resto de páginas del documento
