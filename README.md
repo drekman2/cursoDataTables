@@ -5,7 +5,7 @@ No es exactamente lo mismo que hace él en sus vídeos ya que a veces realizo di
 
 En el index.html está un indice con enlace al resto de páginas del documento
 
-##Contenido del Curso
+## Contenido del Curso
 
 1.Introducción
 * Curso Experto en Datatables: ¿Qué vamos a hacer?
