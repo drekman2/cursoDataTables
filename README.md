@@ -1,4 +1,4 @@
-# cursoDataTables
+# Curso DataTables
 
 Código realizado a la vez que hacía el videocurso de [DesarrolloWeb](https://www.cursosdesarrolloweb.es/course/curso-de-datatables/) - Muy recomendado
 No es exactamente lo mismo que hace él en sus vídeos ya que a veces realizo diversas modificaciones 
