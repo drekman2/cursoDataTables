@@ -12,9 +12,9 @@ En el index.html está un indice con enlace al resto de páginas del documento
 	*Curso Experto en Datatables: ¿Qué vamos a hacer?
   
 2.Primeros pasos con Datatables
-	*Curso Experto en Datatables: Desarrollar nuestra primera tabla 	 	
-	*Curso Experto en Datatables: Carga de datos utilizando archivos JSON 		
-	*Curso Experto en Datatables: Habilitar y deshabilitar búsquedas, órdenes, paginaciones y datos adicionales 		
+	* Curso Experto en Datatables: Desarrollar nuestra primera tabla 	 	
+	* Curso Experto en Datatables: Carga de datos utilizando archivos JSON 		
+	* Curso Experto en Datatables: Habilitar y deshabilitar búsquedas, órdenes, paginaciones y datos adicionales 		
 
 3.Mejorando nuestras tablas
 	*Curso Experto en Datatables: Extender el comportamiento base de Datatables de forma global 		
